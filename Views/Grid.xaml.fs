@@ -455,8 +455,8 @@ type Grid() as this =
           m_gadget_brush.Color <- color
           m_gadget_brush.Opacity <- 1.0
           ctx.FillRectangle(m_gadget_brush, Rect(sx, sy, sign_w, sign_h))
-    if not (vm.IsMsg || vm.IsFloat) then
-      drawScrollbar()
+    // if not (vm.IsMsg || vm.IsFloat) then
+    //  drawScrollbar()
 
     let drawDebug() =
       let txt = Media.FormattedText()
